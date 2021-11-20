@@ -1,0 +1,43 @@
+@import './fonts/style.css';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Gilroy', sans-serif;
+}
+
+.button {
+  cursor: pointer;
+
+  display: inline-block;
+  padding: 0 20px;
+
+  font-family: 'Gilroy', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: none;
+  background-image: url("./buttons.jpg");
+  background-repeat: repeat-x;
+  background-position: center;
+
+  &:hover {
+    background-image: none;
+    background-color: #f0c52e;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    background-image: none;
+    background-color: #f0c52e;
+  }
+
+}

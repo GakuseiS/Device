@@ -1,0 +1,62 @@
+.cat {
+  width: 1160px;
+  margin: 80px auto 0;
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    &-item {
+      width: 160px;
+    }
+  }
+
+  &__img {
+    width: 160px;
+    height: 160px;
+
+    background-color: #f7e296;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--vr {
+      background-image: url('./popular-1.png');
+    }
+
+    &--mp {
+      background-image: url('./popular-2.png');
+    }
+
+    &--ac {
+      background-image: url('./popular-3.png');
+    }
+
+    &--fb {
+      background-image: url('./popular-4.png');
+    }
+
+    &--sw {
+      background-image: url('./popular-5.png');
+    }
+
+    &--qq {
+      background-image: url('./popular-6.png');
+    }
+
+    &:hover {
+      background-color: #f0c52e;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    margin-top: 30px;
+
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

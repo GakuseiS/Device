@@ -1,0 +1,37 @@
+.sort {
+  display: flex;
+  align-content: center;
+  padding: 20px 0 20px 70px;
+
+  background-color: #ebebeb;
+
+  &__title {
+    margin: 0;
+    margin-right: 45px;
+
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    &-item:nth-of-type(2), &-item:nth-of-type(3) {
+      margin-left: 20px;
+    }
+
+    &-item:nth-of-type(3) {
+      margin-right: 220px;
+    }
+
+    &-item:last-of-type {
+      margin-left: 10px;
+    }
+  }
+}

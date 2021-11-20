@@ -1,0 +1,61 @@
+.brand {
+  width: 1160px;
+  margin: 90px auto;
+
+  &__list {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+
+  &__list-item {
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--dji {
+      width: 150px;
+
+      background-image: url('./logo-1.jpg');
+
+      &:hover {
+        background-image: url('./logo-1-color.jpg');
+      }
+    }
+
+    &--sp {
+      width: 260px;
+
+      background-image: url('./logo-2.jpg');
+
+      &:hover {
+        background-image: url('./logo-2-color.jpg');
+      }
+    }
+
+    &--gopro {
+      width: 190px;
+
+      background-image: url('./logo-3.jpg');
+
+      &:hover {
+        background-image: url('./logo-3-color.jpg');
+      }
+    }
+
+    &--vive {
+      width: 200px;
+
+      background-image: url('./logo-4.jpg');
+
+      &:hover {
+        background-image: url('./logo-4-color.jpg');
+      }
+    }
+  }
+
+}
