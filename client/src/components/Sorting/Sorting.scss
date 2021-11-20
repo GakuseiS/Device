@@ -19,6 +19,7 @@
     list-style: none;
 
     display: flex;
+    align-items: center;
     padding: 0;
     margin: 0;
 
@@ -32,6 +33,67 @@
 
     &-item:last-of-type {
       margin-left: 10px;
+    }
+  }
+
+  &__up, &__down {
+    cursor: pointer;
+
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__up {
+    background-image: url('./icon-up-dir.png');
+
+    &--active {
+      background-image: url('./icon-up-dir-active.png') !important;
+    }
+
+    &:hover {
+      background-image: url('./icon-up-dir-hover.png');
+    }
+
+    &:active {
+      background-image: url('./icon-up-dir-active.png');
+    }
+  }
+
+  &__down {
+    background-image: url('./icon-down-dir.png');
+
+    &--active {
+      background-image: url('./icon-down-dir-active.png') !important;
+    }
+
+    &:hover {
+      background-image: url('./icon-down-dir-hover.png');
+    }
+
+    &:active {
+      background-image: url('./icon-down-dir-active.png');
+    }
+  }
+
+  &__type {
+    cursor: pointer;
+
+    color: rgba(0, 0, 0, 0.4);
+
+    &--active {
+      color: black !important;
+    }
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    &:active {
+      color: black;
     }
   }
 }

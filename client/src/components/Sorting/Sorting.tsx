@@ -6,11 +6,11 @@ export const Sorting: React.FC = () => {
         <div className={'sort'}>
             <h3 className={'sort__title'}>Сортировка:</h3>
             <ul className={'sort__list'}>
-                <li className={'sort__list-item'}>По цене</li>
-                <li className={'sort__list-item'} >По типу</li>
-                <li className={'sort__list-item'}>По популярности</li>
-                <li className={'sort__list-item'}>Up</li>
-                <li className={'sort__list-item'}>Down</li>
+                <li className={'sort__list-item sort__type sort__type--active'}>По цене</li>
+                <li className={'sort__list-item sort__type'} >По типу</li>
+                <li className={'sort__list-item sort__type'}>По популярности</li>
+                <li className={'sort__list-item sort__up'}></li>
+                <li className={'sort__list-item sort__down sort__down--active'}></li>
             </ul>
         </div>
     )

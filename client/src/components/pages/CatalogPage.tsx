@@ -8,9 +8,9 @@ export const CatalogPage: React.FC = () => {
             <div className={'catalogPage__wrapper'}>
                 <h2 className={'catalogPage__title'}>Моноподы для селфи</h2>
                 <ul className={'catalogPage__breadcrumbs'}>
-                    <li className={'catalogPage__breadcrumbs-item'}>Главная</li>
-                    <li className={'catalogPage__breadcrumbs-item'}>Каталог товаров</li>
-                    <li className={'catalogPage__breadcrumbs-item'}>Моноподы для селфи</li>
+                    <li className={'catalogPage__breadcrumbs-item'}><a href='./'>Главная</a></li>
+                    <li className={'catalogPage__breadcrumbs-item'}><a href='./catalog'>Каталог товаров</a></li>
+                    <li className={'catalogPage__breadcrumbs-item'}><a href='./catalog'>Моноподы для селфи</a></li>
                 </ul>
             </div>
             <Catalog />

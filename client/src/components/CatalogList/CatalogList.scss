@@ -8,6 +8,7 @@
   width: 760px;
 
   &__item {
+    position: relative;
     width: 355px;
 
     &:nth-of-type(2n) {
@@ -16,12 +17,17 @@
   }
 
   &__img {
+    
     &-wrapper {
       display: flex;
       height: 380px;
 
       background-color: #efefef;
     }
+  }
+
+  &__item:hover > &__modal {
+    display: block;
   }
 
   &__label {
@@ -42,5 +48,44 @@
 
     font-size: 16px;
     line-height: 24px;
+  }
+
+  &__modal {
+    position: absolute;
+    top: 0;
+
+    display: none;
+    width: 355px;
+    height: 380px;
+
+    background-color: rgba(238, 238, 238, 0.7);
+
+    &-text {
+      cursor: pointer;
+
+      margin: 15px auto;
+
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 13px;
+      line-height: 36px;
+      text-align: center;
+
+      &:hover {
+        color: black;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 170px;
+    margin-left: 85px;
+    
+
+    padding-left: 35px !important;
+    padding-right: 35px !important;
   }
 }
