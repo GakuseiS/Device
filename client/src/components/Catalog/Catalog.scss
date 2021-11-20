@@ -23,11 +23,13 @@
   }
 
   &__fieldset {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
+    display: block;
     margin: 0;
     margin-bottom: 30px;
     padding: 0;
+    width: 150px;
+
+
     border: none;
   }
 
@@ -51,5 +53,70 @@
   &__submit {
     width: 200px;
     margin-bottom: 700px;
+  }
+
+  &__label {
+    display: flex;
+
+    width: 110px;
+    margin-bottom: 15px;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__custom-checkbox {
+    cursor: pointer;
+
+    display: inline-block;
+
+    width: 25px;
+    height: 23px;
+    margin-right: 15px;
+
+    background-image: url('./checkbox-off.png');
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url('./checkbox-off-hover.png');
+    }
+  }
+
+  &__checkbox:checked + label &__custom-checkbox {
+    background-image: url('./checkbox-on.png');
+  }
+
+  &__checkbox:checked + label &__custom-checkbox:hover {
+    background-image: url('./checkbox-on-hover.png');
+  }
+
+  &__radiobox {
+    display: none;
+  }
+
+  &__custom-radiobox {
+    cursor: pointer;
+
+    display: inline-block;
+
+    width: 26px;
+    height: 26px;
+    margin-right: 15px;
+
+    background-image: url('./radio-off.png');
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url('./radio-off-hover.png');
+    }
+  }
+
+  &__radiobox:checked + label &__custom-radiobox {
+    background-image: url('./radio-on.png');
+  }
+
+  &__radiobox:checked + label &__custom-radiobox:hover {
+    background-image: url('./radio-on-hover.png');
   }
 }
