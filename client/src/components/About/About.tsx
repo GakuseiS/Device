@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 import './About.scss'
 
-export const About: React.FC = () => {
+interface IAbout {
+    setFeed: Dispatch<SetStateAction<boolean>>;
+}
+
+export const About: React.FC<IAbout> = ({setFeed}) => {
     return (
         <section className={'about'}>
             <div className={'about__left'}>
@@ -22,7 +26,7 @@ export const About: React.FC = () => {
                     className={'about__map'}
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473677!2d37.527429316086916!3d55.68703400452979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1635949470685!5m2!1sru!2sru"
                     width="560" height="220" allowFullScreen loading="lazy" title='map' />
-                <button className={'button'}>Напишите нам</button>
+                <button className={'button'} onClick={() => setFeed(true)}>Напишите нам</button>
             </div>
         </section>
     )
