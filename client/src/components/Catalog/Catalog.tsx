@@ -3,6 +3,7 @@ import './Catalog.scss'
 import {Sorting} from "../Sorting/Sorting";
 import {Pagination} from "../Pagination/Pagination";
 import {CatalogList} from "../CatalogList/CatalogList";
+import { DynamicBounds } from '../Slider/Slider';
 
 export const Catalog: React.FC = () => {
     return (
@@ -12,7 +13,7 @@ export const Catalog: React.FC = () => {
                 <form className={'catalog__form'} action="/">
                     <fieldset className={'catalog__fieldset'}>
                         <legend className={'catalog__legend'}>Стоимость</legend>
-                        <input type="range"/>
+                        <DynamicBounds />
                     </fieldset>
                     <fieldset className={'catalog__fieldset'}>
                         <legend className={'catalog__legend'}>Цвет</legend>

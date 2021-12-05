@@ -1,6 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './Footer.scss'
 import {ReactComponent as ReactLogo} from './logo.svg'
+
 
 export const Footer: React.FC = () => {
     return (
@@ -17,9 +19,9 @@ export const Footer: React.FC = () => {
                 <div className={'footer__middle'}>
                     <p className={'footer__address'}>г. Москва, ул. Строителей, 15</p>
                     <nav className={'footer__nav'}>
-                        <a className={'footer__nav-item'} href='/'>Доставка</a>
-                        <a className={'footer__nav-item'} href='/'>Гарантии</a>
-                        <a className={'footer__nav-item'} href='/'>Контакты</a>
+                        <NavLink className={'footer__nav-item'} to='/'>Доставка</NavLink>
+                        <NavLink className={'footer__nav-item'} to='/'>Гарантии</NavLink>
+                        <NavLink className={'footer__nav-item'} to='/'>Контакты</NavLink>
                     </nav>
                     <p className={'footer__tel'}>Тел.: +7 (495) 495-95-95</p>
                 </div>
