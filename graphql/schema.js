@@ -8,7 +8,24 @@ module.exports = buildSchema(`
         price: Int!
     }
 
+    input FeedbackInput {
+        name: String!
+        email: String!
+        text: String!
+    }
+
+    type Feedback {
+        id: ID!
+        name: String!
+        email: String!
+        text: String!
+    }
+
     type Query {
         getAllCarts: [Cart]
+    }
+
+    type Mutation {
+        createFeedback(input: FeedbackInput): Feedback
     }
 `)
